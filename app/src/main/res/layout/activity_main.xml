@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/ic_loginimage" />
+
+            <TextView
+                android:id="@+id/idTextViewVerifyMobileNewMobileVerificationActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account Verification"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/idTextViewVerifyMobileMessageNewMobileVerificationActivity"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_margin="12dp"-->
+            <!--                android:gravity="center"-->
+            <!--                android:text="@string/stringOfEnterRegisteredMobileNumberMessage"-->
+            <!--                android:textColor="#231F20"-->
+            <!--                android:textSize="16sp" />-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/idTextInputLayoutEmailLoginActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginRight="24dp"
+                android:hint="Enter Email Id"
+                app:startIconDrawable="@drawable/ic_email_black_24dp"
+                app:startIconTint="@color/colorPrimary"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/colorPrimary"
+                app:boxCornerRadiusBottomEnd="0dp"
+                app:boxCornerRadiusTopStart="0dp"
+
+                app:boxBackgroundColor="@color/whiteColor"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/idTextInputLayoutPasswordLoginActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="20dp"
+                android:hint="Enter Password"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/colorPrimary"
+                app:startIconDrawable="@drawable/ic_lock_black_24dp"
+                app:startIconTint="@color/colorPrimary"
+                app:boxCornerRadiusBottomEnd="0dp"
+                app:boxCornerRadiusTopStart="0dp"
+
+                app:boxBackgroundColor="@color/whiteColor"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/idTextViewForgotPasswordLoginActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_gravity="right"
+                android:text="@string/stringOfForgotPassowrd"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="16sp"
+                android:padding="8dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/idButtonLoginLoginActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="24dp"
+                android:insetTop="1dp"
+                android:insetBottom="1dp"
+                android:text="LogIN"
+                android:textSize="16sp"
+                app:rippleColor="#ffff"
+                app:cornerRadius="0dp"
+
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="24dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account?"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_red_light"
+                />
+
+            <TextView
+                android:id="@+id/idTextViewCreateAnAccountLoginActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stringOfCreateAnAccount"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="24dp"
+                android:padding="12dp"
+                />
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:id="@+id/idButtonCreateAnAccountLoginActivity"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="24dp"-->
+<!--                android:layout_marginRight="24dp"-->
+<!--                android:layout_marginBottom="24dp"-->
+<!--                android:insetTop="1dp"-->
+<!--                android:insetBottom="1dp"-->
+<!--                android:text="Crate an account"-->
+<!--                android:textSize="16sp"-->
+<!--                app:rippleColor="#ffff"-->
+<!--                app:cornerRadius="0dp"-->
+<!--                app:backgroundTint="#E5303F9F"-->
+<!--                />-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

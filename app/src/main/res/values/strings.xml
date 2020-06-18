@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Login App</string>
+
+    <string name="stringOfForgotPassowrd"><u>Forgot Password?</u></string>
+    <string name="stringOfCreateAnAccount"><u>Create An Account</u></string>
+    <string name="stringOfGoToLogin"><u>Go To Login</u></string>
+
+</resources>
